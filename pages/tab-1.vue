@@ -62,7 +62,7 @@ export default {
     mounted() {
     const vm = this;
     axios
-    .get('http://jsonplaceholder.typicode.com/users')
+    .get('https://jsonplaceholder.typicode.com/users')
     .then(response => (this.apiData = response.data))
     .then(function (assign){
         console.log(vm.apiData)
